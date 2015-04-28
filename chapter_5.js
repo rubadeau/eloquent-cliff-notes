@@ -52,6 +52,34 @@ callMeMaybe(function() {
   return "I just anonymously met you" ;
 }, true);
 
+
+*********************
+More HO functions:
+
+var array = ["math","is","awesome"]
+
+array.reduce(function(sentance,word) {
+  return sentance + word;
+}, "");
+
+// => "mathisawesome"
+
+**********************
+var array = [1,2,3]
+
+array.map(function(element) {
+  return element + 1;
+});
+
+// => [2,3,4]
+
+**********************
+
+var flattened = [[0, 1], [2, 3], [4, 5]].reduce(function(a, b) {
+  return a.concat(b);
+});
+// flattened is [0, 1, 2, 3, 4, 5]
+
 --------------------------------------------------------------------------
 
 Book Notes:
