@@ -14,6 +14,16 @@ Three types of properties-
 2)Anonymous
 3)Variable
 
+
+Event Handler:
+// if you are adding and removing DOM elements this will bind to the
+// objects unlike the 2nd form.
+$(document).on("event", "#selector", function(e) {...});
+
+VS.
+
+$('#selector').on("event", function(e) {...});
+
 ***FUNCTIONS ARE JUST VALUES***
 
 Abstractions:
@@ -21,7 +31,7 @@ Anytime you make code much easier to read and reduce probability for bugs by
 grouping lower level function(s) into named functions and defining them elsewhere
 in your code.  NAMING IS SUPER IMPORTANT HERE.
 
-**I do not endorse this song for listening to or code examples**
+**I do not endorse this song for listening to || for code examples**
 
 var iJustMetYou = function() {
   return "I just met you" ;
